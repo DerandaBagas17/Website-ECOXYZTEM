@@ -1,0 +1,125 @@
+/* Styling Kustom untuk Estetika Lilin Aromaterapi ecoxyztem */
+
+:root {
+    --primary: #5cb85c; /* Hijau yang fresh (Success/Eco Color) */
+    --secondary: #2c3e50; /* Biru gelap untuk teks (Dark/Footer Color) */
+    --light: #f4f7f6; /* Abu-abu muda untuk background section */
+}
+
+body {
+    font-family: 'Poppins', sans-serif; 
+    color: var(--secondary);
+}
+
+/* Navigasi */
+#mainNav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease; /* Transisi untuk scroll */
+}
+
+.navbar-brand {
+    color: var(--primary) !important;
+    font-size: 1.75em;
+    font-weight: 700;
+}
+
+/* Efek Scroll Navbar (Tambahkan di style.css) */
+.navbar-scrolled {
+    background-color: white; 
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+
+/* Hero Section */
+.masthead {
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+    background-color: var(--primary); 
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                      url('assets/img/hero.png'); 
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.masthead-heading {
+    font-size: 3.5rem; /* Sedikit lebih besar */
+    font-weight: 800; /* Lebih tebal */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow agar teks lebih menonjol */
+}
+
+.masthead-subheading {
+    font-size: 1.6rem; 
+    font-weight: 400;
+    margin-bottom: 2rem !important; /* Jarak bawah diperlebar */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Shadow agar teks lebih menonjol */
+}
+
+/* Custom Divider (Kita nonaktifkan garis dan ikon di HERO section agar rapi) */
+.masthead .divider-custom {
+    display: none; /* Menyembunyikan divider pada Hero Section */
+}
+
+/* Styling Tombol di Hero Section */
+.masthead .btn-outline-light {
+    border-color: white;
+    color: white;
+    border-width: 2px; /* Border lebih tebal */
+    padding: 0.8rem 2rem; /* Ukuran tombol lebih besar */
+    background-color: rgba(255, 255, 255, 0.1); /* Latar belakang semi-transparan */
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.masthead .btn-outline-light:hover {
+    background-color: white;
+    color: var(--secondary);
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+/* Section Styling */
+.page-section {
+    padding: 6rem 0;
+}
+
+/* Product Card */
+.product-card img {
+    height: 300px; /* Tinggi gambar produk seragam */
+    object-fit: cover;
+    /* Menjaga sudut melengkung jika ada pada card Bootstrap */
+    border-top-left-radius: calc(0.25rem - 1px); 
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.btn-success {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-success:hover {
+    background-color: #4CAF50; /* Sedikit lebih gelap saat hover */
+    border-color: #4CAF50;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--secondary);
+    color: white;
+}
+
+.btn-social {
+    color: white;
+    background-color: var(--secondary);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-social:hover {
+    background-color: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}
