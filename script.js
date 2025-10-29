@@ -64,13 +64,3 @@ document.addEventListener('DOMContentLoaded', function () {
     // Panggil saat event scroll
     window.addEventListener('scroll', toggleNavbarClass);
 });
-
-
-// -------------------------------------------------------------------------
-// 4. Perbaikan Link WhatsApp di Halaman Detail (Opsional: Agar lebih rapi)
-// -------------------------------------------------------------------------
-// Fungsi ini tidak perlu dipanggil jika Anda sudah menggunakan productId di HTML, 
-// tetapi berguna jika Anda ingin menambahkan lebih banyak interaksi.
-
-// Tidak ada kode tambahan yang diperlukan di sini karena kita akan 
-// memanggil openWhatsApp() dengan ID produk langsung dari HTML detail.
