@@ -91,6 +91,33 @@ body {
     filter: none;
 }
 
+ /* 1. SMALLER LOGO ON MOBILE (Default max-height) */
+      .navbar-brand img {
+        max-height: 35px; /* Reduced height for mobile/default */
+        transition: max-height 0.3s ease-in-out;
+      }
+      
+      /* Desktop/Large Screens (>= 992px) */
+      @media (min-width: 992px) {
+        .navbar-brand img {
+          max-height: 50px; /* Original size for desktop */
+        }
+        #mainNav.navbar-shrink .navbar-brand img {
+          max-height: 40px; /* Slightly smaller when shrunk on desktop */
+        }
+      }
+
+      /* 2. ENSURE TOGGLER IS ON THE FAR RIGHT ON MOBILE */
+      /* By default, Bootstrap 5 handles this with d-flex on the .navbar, 
+         but we ensure the brand and toggler are spaced out by flexing the container. */
+      @media (max-width: 991.98px) {
+        #mainNav .container {
+          display: flex;
+          justify-content: space-between; /* Pushes brand left, toggler right */
+          align-items: center;
+        }
+      }
+
 
 /* ------------------------------------------------------------------------- */
 /* Tombol Umum */

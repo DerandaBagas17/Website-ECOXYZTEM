@@ -24,17 +24,18 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body id="page-top">
-    <!-- Navigasi -->
-    <!-- Kelas fixed-top dan id="mainNav" digunakan oleh script.js dan style.css -->
+   <!-- Navigasi -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <!-- Container div now relies on custom CSS for mobile spacing -->
       <div class="container">
-        <a class="navbar-brand fw-bold" href="#hero" style="max-height: 50px">
-          <!-- Menggunakan gambar logo kelompok sebagai pengganti teks ecoxyztem -->
+        <a class="navbar-brand fw-bold" href="#hero">
+          <!-- Logo image will be smaller on mobile due to custom CSS -->
           <img
             src="assets/img/kelompok.png"
             alt="Logo Kelompok ecoxyztem"
             class="img-fluid"
-            style="max-height: 50px; width: auto; border-radius: 8px"
+            style="width: auto; border-radius: 8px"
+            onerror="this.onerror=null;this.src='https://placehold.co/120x35/1a6d36/ffffff?text=ecoxyztem'"
           />
         </a>
         <button
@@ -50,6 +51,7 @@
           <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- ms-auto ensures the links are pushed to the right on desktop -->
           <ul class="navbar-nav ms-auto py-4 py-lg-0">
             <li class="nav-item">
               <a class="nav-link" href="#produk">Produk</a>
