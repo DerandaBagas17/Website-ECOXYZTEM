@@ -1,0 +1,53 @@
+/* * Gaya Spesifik untuk Halaman Detail Varian
+ * Halaman ini menggunakan gaya dasar dari style.css
+ */
+
+/* ------------------------------------------------------------------------- */
+/* Header/Masthead Varian */
+/* ------------------------------------------------------------------------- */
+.masthead {
+    min-height: 40vh; /* Perkecil tinggi header */
+    padding-top: calc(7rem + 5rem);
+    padding-bottom: 5rem;
+    background-color: var(--primary);
+    background-image: none !important; /* Hapus background image dari index */
+    background-attachment: scroll !important; /* Hapus parallax */
+    display: flex;
+    align-items: center;
+}
+
+.masthead-heading, .masthead-subheading {
+    text-shadow: none;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* Navbar Override (Diperlukan karena header varian berwarna) */
+/* ------------------------------------------------------------------------- */
+
+/* Override navbar-scrolled agar navbar tetap primary di halaman detail */
+.navbar-scrolled {
+    background-color: var(--primary) !important;
+    /* Menghilangkan bayangan karena latar belakang sudah solid */
+    box-shadow: none !important; 
+}
+.navbar-scrolled .navbar-brand,
+.navbar-scrolled .nav-link {
+    color: var(--white) !important;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* Detail Produk dan Gambar */
+/* ------------------------------------------------------------------------- */
+.product-detail-section {
+    padding: 5rem 0;
+}
+
+.product-image {
+    max-height: 500px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.1);
+}

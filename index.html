@@ -1,124 +1,206 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ecoxyztem: Ketenangan dalam Setiap Nyala</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css"> 
-</head>
-<body>
+    <!-- Link Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Link Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Link Google Fonts (Poppins) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#hero">ecoxyztem</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#produk">Produk</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#keunggulan">Keunggulan</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#testimoni">Testimoni</a></li>
-                    <li class="nav-item"><a class="nav-link btn btn-success text-white ms-lg-3" href="#" onclick="openWhatsApp('Pesan%20langsung%20via%20website.')">Pesan WA</a></li>
-                </ul>
-            </div>
+    <!-- Link CSS Eksternal Kustom (style.css) -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="page-top">
+    <!-- Navigasi -->
+    <!-- Kelas fixed-top dan id="mainNav" digunakan oleh script.js dan style.css -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#hero" style="max-height: 50px">
+          <!-- Menggunakan gambar logo kelompok sebagai pengganti teks ecoxyztem -->
+          <img
+            src="assets/img/kelompok.png"
+            alt="Logo Kelompok ecoxyztem"
+            class="img-fluid"
+            style="max-height: 50px; width: auto; border-radius: 8px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#produk">Produk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#keunggulan">Keunggulan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimoni">Testimoni</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
+    <!-- Header / Hero Section -->
     <header class="masthead text-center text-white" id="hero">
-        <div class="container d-flex align-items-center flex-column">
-            <h1 class="masthead-heading mb-0">ecoxyztem: Ketenangan dalam Setiap Nyala.</h1>
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-leaf"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <p class="masthead-subheading font-weight-light mb-0">Lilin aromaterapi alami, dibuat dengan cinta untuk relaksasi dan suasana damai.</p>
-            <a class="btn btn-xl btn-outline-light mt-4" href="#produk">
-                <i class="fas fa-star me-2"></i>
-                Lihat Koleksi Aroma
-            </a>
-        </div>
+      <div class="container d-flex align-items-center flex-column">
+        <h1 class="masthead-heading mb-0">Ketenangan dalam Setiap Nyala.</h1>
+
+        <p class="masthead-subheading font-weight-light mb-0">
+          Lilin aromaterapi alami, dibuat dengan cinta untuk relaksasi dan
+          suasana damai.
+        </p>
+        <a class="btn btn-xl btn-outline-light mt-4" href="#produk">
+          <i class="fas fa-search me-2"></i>
+          Lihat Koleksi Aroma
+        </a>
+      </div>
     </header>
 
+    <!-- SECTION PRODUK -->
     <section class="page-section portfolio" id="produk">
-        <div class="container">
-            <h2 class="page-section-heading text-center text-secondary mb-0">Koleksi Aroma Pilihan</h2>
-            <div class="divider-custom divider-custom-dark">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-spa"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <div class="row justify-content-center">
-                
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="card h-100 shadow-sm border-0 product-card">
-                        <img class="card-img-top" src="assets/img/lavender-dream.png" alt="Lavender Dream">
-                        <div class="card-body text-center">
-                            <h4 class="card-title fw-bold">Lavender Dream</h4>
-                            <p class="card-text text-muted">Menenangkan pikiran dan membantu tidur lebih nyenyak. **Rp 89.000**</p>
-                            <a href="#" onclick="openWhatsApp('Saya%20mau%20pesan%20Lilin%20Lavender%20Dream.')" class="btn btn-success"><i class="fab fa-whatsapp me-2"></i>Pesan via WA</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="card h-100 shadow-sm border-0 product-card">
-                        <img class="card-img-top" src="assets/img/Sandalwood-Calm.png" alt="Sandalwood Calm">
-                        <div class="card-body text-center">
-                            <h4 class="card-title fw-bold">Sandalwood Calm</h4>
-                            <p class="card-text text-muted">Aroma kayu yang hangat, cocok untuk meditasi dan fokus. **Rp 95.000**</p>
-                            <a href="#" onclick="openWhatsApp('Saya%20mau%20pesan%20Lilin%20Sandalwood%20Calm.')" class="btn btn-success"><i class="fab fa-whatsapp me-2"></i>Pesan via WA</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="card h-100 shadow-sm border-0 product-card">
-                        <img class="card-img-top" src="assets/img/Citrus-Refresh.png" alt="Citrus Refresh">
-                        <div class="card-body text-center">
-                            <h4 class="card-title fw-bold">Citrus Refresh</h4>
-                            <p class="card-text text-muted">Aroma segar dari jeruk dan lemon untuk meningkatkan energi. **Rp 85.000**</p>
-                            <a href="#" onclick="openWhatsApp('Saya%20mau%20pesan%20Lilin%20Citrus%20Refresh.')" class="btn btn-success"><i class="fab fa-whatsapp me-2"></i>Pesan via WA</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+      <div class="container">
+        <h2 class="page-section-heading text-center text-secondary mb-0">
+          Koleksi Aroma Pilihan
+        </h2>
+        <div class="divider-custom divider-custom-dark">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><i class="fas fa-spa"></i></div>
+          <div class="divider-custom-line"></div>
         </div>
+        <div class="row justify-content-center">
+          <!-- Product 1: Lavender Dream -->
+          <div class="col-md-6 col-lg-4 mb-5">
+            <div class="card h-100 shadow-sm border-0 product-card">
+              <!-- Gunakan placeholder jika gambar lokal tidak tersedia -->
+              <img
+                class="card-img-top"
+                src="assets/img/lavender-dream.png"
+                alt="Lavender Dream"
+                onerror="this.onerror=null;this.src='https://placehold.co/400x250/5D3FD3/ffffff?text=LAVENDER+DREAM'"
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title fw-bold">Lavender Dream</h4>
+                <p class="card-text text-muted">
+                  Menenangkan pikiran dan membantu tidur lebih nyenyak.
+                </p>
+                <a href="varian-lavender.html" class="btn btn-primary"
+                  ><i class="fas fa-info-circle me-2"></i>Lihat Detail</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2: Sandalwood Calm -->
+          <div class="col-md-6 col-lg-4 mb-5">
+            <div class="card h-100 shadow-sm border-0 product-card">
+              <img
+                class="card-img-top"
+                src="assets/img/Sandalwood-Calm.png"
+                alt="Sandalwood Calm"
+                onerror="this.onerror=null;this.src='https://placehold.co/400x250/8B4513/ffffff?text=SANDALWOOD+CALM'"
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title fw-bold">Sandalwood Calm</h4>
+                <p class="card-text text-muted">
+                  Aroma kayu yang hangat, cocok untuk meditasi dan fokus.
+                </p>
+                <a href="varian-sandalwood.html" class="btn btn-primary"
+                  ><i class="fas fa-info-circle me-2"></i>Lihat Detail</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3: Citrus Refresh -->
+          <div class="col-md-6 col-lg-4 mb-5">
+            <div class="card h-100 shadow-sm border-0 product-card">
+              <img
+                class="card-img-top"
+                src="assets/img/Citrus-Refresh.png"
+                alt="Citrus Refresh"
+                onerror="this.onerror=null;this.src='https://placehold.co/400x250/FF8C00/ffffff?text=CITRUS+REFRESH'"
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title fw-bold">Citrus Refresh</h4>
+                <p class="card-text text-muted">
+                  Aroma segar dari jeruk dan lemon untuk meningkatkan energi.
+                </p>
+                <a href="varian-citrus.html" class="btn btn-primary"
+                  ><i class="fas fa-info-circle me-2"></i>Lihat Detail</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    
+
+    <!-- Keunggulan Section -->
     <section class="page-section bg-light" id="keunggulan">
-        <div class="container">
-            <h2 class="page-section-heading text-center text-secondary mb-0">Mengapa Memilih ecoxyztem?</h2>
-            <div class="divider-custom divider-custom-dark">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-seedling"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 mb-4 text-center">
-                    <i class="fas fa-tree fa-4x text-success mb-3"></i>
-                    <h4 class="fw-bold">Bahan Alami (Eco)</h4>
-                    <p class="text-muted">Terbuat dari 100% *Soy Wax* yang lebih bersih dan ramah lingkungan.</p>
-                </div>
-                <div class="col-lg-4 mb-4 text-center">
-                    <i class="fas fa-flask fa-4x text-success mb-3"></i>
-                    <h4 class="fw-bold">Essential Oil Murni</h4>
-                    <p class="text-muted">Hanya menggunakan minyak esensial, bebas dari pewangi sintetis.</p>
-                </div>
-                <div class="col-lg-4 mb-4 text-center">
-                    <i class="fas fa-box-open fa-4x text-success mb-3"></i>
-                    <h4 class="fw-bold">Kemasan Ramah Lingkungan</h4>
-                    <p class="text-muted">Mendukung keberlanjutan dengan toples kaca yang dapat digunakan kembali.</p>
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="page-section-heading text-center text-secondary mb-0">
+          Mengapa Memilih Auralis?
+        </h2>
+        <div class="divider-custom divider-custom-dark">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><i class="fas fa-seedling"></i></div>
+          <div class="divider-custom-line"></div>
         </div>
+        <div class="row">
+          <div class="col-lg-4 mb-4 text-center">
+            <i class="fas fa-tree fa-4x text-success mb-3"></i>
+            <h4 class="fw-bold">Bahan Alami (Eco)</h4>
+            <p class="text-muted">
+              Terbuat dari 100% *Soy Wax* yang lebih bersih dan ramah
+              lingkungan.
+            </p>
+          </div>
+          <div class="col-lg-4 mb-4 text-center">
+            <i class="fas fa-flask fa-4x text-success mb-3"></i>
+            <h4 class="fw-bold">Essential Oil Murni</h4>
+            <p class="text-muted">
+              Hanya menggunakan minyak esensial, bebas dari pewangi sintetis.
+            </p>
+          </div>
+          <div class="col-lg-4 mb-4 text-center">
+            <i class="fas fa-box-open fa-4x text-success mb-3"></i>
+            <h4 class="fw-bold">Kemasan Ramah Lingkungan</h4>
+            <p class="text-muted">
+              Mendukung keberlanjutan dengan toples kaca yang dapat digunakan
+              kembali.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="page-section" id="testimoni">
+    <!-- Testimoni Section -->
+   <section class="page-section" id="testimoni">
         <div class="container">
             <h2 class="page-section-heading text-center text-secondary mb-0">Apa Kata Mereka?</h2>
             <div class="divider-custom divider-custom-dark">
@@ -127,17 +209,115 @@
                 <div class="divider-custom-line"></div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <blockquote class="blockquote text-center">
-                        <p class="mb-0 fst-italic">"Lilin ecoxyztem bener-bener bikin kamar jadi tenang. Aromanya lembut, nggak menyengat. Auto repeat order!"</p>
-                        <footer class="blockquote-footer">Rina S.</footer>
-                    </blockquote>
-                    <blockquote class="blockquote text-center mt-4">
-                        <p class="mb-0 fst-italic">"Suka banget sama konsep *eco-friendly*-nya! Selain wanginya enak, saya merasa ikut berkontribusi positif."</p>
-                        <footer class="blockquote-footer">Bima P.</footer>
-                    </blockquote>
+                
+                <!-- Testimoni 1: Rina Santoso -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar" style="background-color: #5D3FD3;">RS</div>
+                            <div>
+                                <h5 class="testimonial-name mb-0">Rina Santoso</h5>
+                                <p class="testimonial-role">Desainer Grafis, Jakarta</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Lilin ecoxyztem bener-bener bikin kamar jadi tenang. Aromanya lembut, nggak menyengat. Varian **Lavender Dream** adalah favoritku. Auto repeat order!"</p>
+                    </div>
                 </div>
+
+                <!-- Testimoni 2: Bima Putra -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar" style="background-color: #8B4513;">BP</div>
+                            <div>
+                                <h5 class="testimonial-name mb-0">Bima Putra</h5>
+                                <p class="testimonial-role">Pegawai Swasta, Bandung</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Suka banget sama konsep *eco-friendly*-nya! Selain wanginya enak, saya merasa ikut berkontribusi positif. Suasana kayu-kayu bikin betah."</p>
+                    </div>
+                </div>
+                
+                <!-- Testimoni 3: Maya Lestari -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar" style="background-color: #FF8C00;">ML</div>
+                            <div>
+                                <h5 class="testimonial-name mb-0">Maya Lestari</h5>
+                                <p class="testimonial-role">Content Creator, Yogyakarta</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Aromanya tahan lama dan benar-benar otentik. Bikin betah kerja dari rumah karena suasana jadi lebih santai dan fokus. Pengiriman cepat!"</p>
+                    </div>
+                </div>
+
             </div>
+            
+            <div class="row justify-content-center mt-3">
+                
+                <!-- Testimoni 4: Fajar Adi -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar" style="background-color: #1a6d36;">FA</div>
+                            <div>
+                                <h5 class="testimonial-name mb-0">Fajar Adi</h5>
+                                <p class="testimonial-role">Pemilik Kedai Kopi, Surabaya</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Pengiriman cepat dan packaging-nya aman banget. Lilinnya sendiri top, aroma **Sandalwood Calm** persis seperti yang saya bayangkan. Cocok untuk suasana kafe."</p>
+                    </div>
+                </div>
+
+                <!-- Testimoni 5: Sita Dewi -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar" style="background-color: #dc3545;">SD</div>
+                            <div>
+                                <h5 class="testimonial-name mb-0">Sita Dewi</h5>
+                                <p class="testimonial-role">Mahasiswi, Surabaya</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Varian **Citrus Refresh** benar-benar menyegarkan, cocok untuk mulai hari. Ingin coba yang varian Lavender selanjutnya. Bikin semangat belajar!"</p>
+                    </div>
+                </div>
+                
+                <!-- Testimoni 6: Dika Wirawan -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar" style="background-color: #0dcaf0;">DW</div>
+                            <div>
+                                <h5 class="testimonial-name mb-0">Dika Wirawan</h5>
+                                <p class="testimonial-role">Pengusaha Muda, Jakarta</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Kualitas lilin terbaik yang pernah saya coba. Nyalanya bersih dan wanginya memenuhi ruangan dengan cepat. Sangat direkomendasikan untuk relaksasi setelah bekerja."</p>
+                    </div>
+                </div>
+
+            </div>
+            
             <div class="text-center mt-5">
                 <a class="btn btn-xl btn-success" href="#" onclick="openWhatsApp('Saya%20ingin%20bertanya%20lebih%20lanjut%20tentang%20ecoxyztem.')">
                     <i class="fab fa-whatsapp me-2"></i>
@@ -147,23 +327,46 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer py-4">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-4 text-lg-start">Copyright &copy; ecoxyztem 2025</div>
-                <div class="col-lg-4 my-3 my-lg-0 text-center">
-                    <a class="btn btn-dark btn-social mx-2" href="https://instagram.com/akun_ecoxyztem" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="https://tiktok.com/@akun_ecoxyztem" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="https://wa.me/6281234567890" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                </div>
-                <div class="col-lg-4 text-lg-end">
-                    Kontak Cepat: +62 822-5251-5391
-                </div>
-            </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4 text-lg-start">
+            Copyright &copy; ecoxyztem 2025
+          </div>
+          <div class="col-lg-4 my-3 my-lg-0 text-center">
+            <a
+              class="btn btn-dark btn-social mx-2"
+              href="#"
+              target="_blank"
+              aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              class="btn btn-dark btn-social mx-2"
+              href="#"
+              target="_blank"
+              aria-label="WhatsApp"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            Kontak Cepat: +62 822-5251-5391
+          </div>
         </div>
+      </div>
     </footer>
 
+    <!-- Copyright Section -->
+    <div class="copyright py-4 text-center text-white">
+      <div class="container">
+        <small>Hak Cipta &copy; ecoxyztem 2025</small>
+      </div>
+    </div>
+
+    <!-- Link Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script> 
-</body>
+    <!-- Link JavaScript Eksternal Kustom (script.js) -->
+    <script src="script.js"></script>
+  </body>
 </html>
